@@ -1,9 +1,9 @@
 <html>
     <h1 id="header">Engine Noise</h1>
     <ul>
-        <li><a href="#" onclick="noise()">Noise</a></li>
-        <li><a href="#" onclick="sin(1, 440)">Sine</a></li>
-        <li><a href="#" onclick="square(1, 440)">Square</a></li>
+        <li><a href="#" onclick="Sample.noise(0.1).scale(0.1).play()">Noise</a></li>
+        <li><a href="#" onclick="Sample.sin(1, 440).bellEnvelope().play()">Sine</a></li>
+        <li><a href="#" onclick="Sample.square(1, 440).bellEnvelope().play()">Square</a></li>
         <li><a href="#" onclick="sample()">Click Sample</a></li>
     </ul>
     <script src="/index.js"></script>
